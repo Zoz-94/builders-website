@@ -27,7 +27,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <Link href="/contact" className="nav-hover-box">Contact</Link>
               </nav>
             </div>
-            {children} {/* ✅ Add this */}
           </header>
 
           <main className="relative max-w-6xl mx-auto px-4 py-20 flex-grow w-full">
@@ -56,6 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <footer className="text-center text-gray-400 bg-[#2B124C] py-2 text-xs">
             © 2025 Builders. All rights reserved.
           </footer>
+          {children} {/* ✅ Injected page content below layout */}
         </div>
       </body>
     </html>
