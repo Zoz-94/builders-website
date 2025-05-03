@@ -22,7 +22,6 @@ main {
   padding-bottom: 4rem;
 }
 
-/* Optional: smooth nav hover and active link visuals */
 a {
   transition: color 0.3s;
 }
