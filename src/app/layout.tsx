@@ -27,6 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <Link href="/contact" className="nav-hover-box">Contact</Link>
               </nav>
             </div>
+            {children} {/* ✅ Add this */}
           </header>
 
           <main className="relative max-w-6xl mx-auto px-4 py-20 flex-grow w-full">
