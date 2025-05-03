@@ -41,6 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <div className="bg-[#F7F5F9] shadow-md p-6 rounded-lg">Future update card #3</div>
               </div>
             </div>
+            {children} {/* ✅ CORRECT POSITION */}
           </main>
 
           <div className="bg-[#2B124C] text-white py-3">
@@ -55,7 +56,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <footer className="text-center text-gray-400 bg-[#2B124C] py-2 text-xs">
             © 2025 Builders. All rights reserved.
           </footer>
-          {children} {/* ✅ Injected page content below layout */}
         </div>
       </body>
     </html>
